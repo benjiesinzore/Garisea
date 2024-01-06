@@ -27,7 +27,7 @@ class ItemOffersAdapter (private val items: List<ItemOffers>)  : RecyclerView.Ad
         return items.size
     }
 
-    class ViewHolder(private val binding: OffersItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(binding: OffersItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
 
         val title: TextView = binding.offersTitle
         val valid: TextView = binding.offersValid

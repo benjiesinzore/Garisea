@@ -4,46 +4,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="20dp"
+    android:layout_margin="@dimen/_20dp"
     tools:context=".fragments.DashboardFragment">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
-                app:cardCornerRadius="15dp">
+                android:layout_height="@dimen/_160dp"
+                app:cardCornerRadius="@dimen/_15dp">
 
                 <LinearLayout
                     android:orientation="vertical"
-                    android:padding="20dp"
+                    android:padding="@dimen/_20dp"
                     android:background="@color/greenPrimary"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        app:cardCornerRadius="15dp">
+                        android:layout_width="@dimen/_60dp"
+                        android:layout_height="@dimen/_60dp"
+                        app:cardCornerRadius="@dimen/_15dp">
 
                         <RelativeLayout
-                            android:background="#e2e2e2"
+                            android:background="@color/grayPrimary"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
                                 android:layout_centerInParent="true"
-                                android:src="@drawable/ic_profile" />
+                                android:src="@drawable/ic_profile"
+                                tools:ignore="ContentDescription" />
 
                         </RelativeLayout>
 
@@ -52,36 +55,37 @@
                     <TextView
                         android:id="@+id/txGreetings"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_18sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="@dimen/_8dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hello, Good Afternoon, "/>
+                        android:text="@string/hello_good_afternoon"/>
 
                     <TextView
                         android:id="@+id/txUsername"
                         android:textColor="@color/white"
-                        android:textSize="15sp"
+                        android:textSize="@dimen/_15sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="@dimen/_8dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Benjamin Sinzore"/>
+                        android:text="@string/benjamin_sinzore"/>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <LinearLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
 
                 <RelativeLayout
                     android:id="@+id/rlProfileBtn"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/_0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center">
@@ -93,30 +97,31 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:cardCornerRadius="15dp">
+                            android:layout_width="@dimen/_60dp"
+                            android:layout_height="@dimen/_60dp"
+                            app:cardCornerRadius="@dimen/_15dp">
 
                             <RelativeLayout
-                                android:background="#e2e2e2"
+                                android:background="@color/grayPrimary"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="@dimen/_35dp"
+                                    android:layout_height="@dimen/_35dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_profile" />
+                                    android:src="@drawable/ic_profile"
+                                    tools:ignore="ContentDescription" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
                         <TextView
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="update profile"/>
+                            android:text="@string/update_profile"/>
 
                     </LinearLayout>
 
@@ -136,30 +141,31 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:cardCornerRadius="15dp">
+                            android:layout_width="@dimen/_60dp"
+                            android:layout_height="@dimen/_60dp"
+                            app:cardCornerRadius="@dimen/_15dp">
 
                             <RelativeLayout
-                                android:background="#e2e2e2"
+                                android:background="@color/grayPrimary"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="@dimen/_35dp"
+                                    android:layout_height="@dimen/_35dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_settings" />
+                                    android:src="@drawable/ic_settings"
+                                    tools:ignore="ContentDescription" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
                         <TextView
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="update score"/>
+                            android:text="@string/update_score"/>
 
                     </LinearLayout>
 
@@ -167,7 +173,7 @@
 
                 <RelativeLayout
                     android:id="@+id/rlHelpBtn"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/_0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center">
@@ -179,30 +185,31 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:cardCornerRadius="15dp">
+                            android:layout_width="@dimen/_60dp"
+                            android:layout_height="@dimen/_60dp"
+                            app:cardCornerRadius="@dimen/_15dp">
 
                             <RelativeLayout
-                                android:background="#e2e2e2"
+                                android:background="@color/grayPrimary"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="@dimen/_35dp"
+                                    android:layout_height="@dimen/_35dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_help" />
+                                    android:src="@drawable/ic_help"
+                                    tools:ignore="ContentDescription" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
                         <TextView
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="help"/>
+                            android:text="@string/help"/>
 
                     </LinearLayout>
 
@@ -212,16 +219,16 @@
 
             <TextView
                 android:textColor="@color/black"
-                android:textSize="25sp"
+                android:textSize="@dimen/_25sp"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Qualified"/>
+                android:text="@string/qualified"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycle_view_financing"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

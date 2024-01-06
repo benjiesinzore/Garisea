@@ -8,22 +8,14 @@ class MyPreferences(context: Context) {
 
     private var privateMode = 0
 
-    // Shared Preferences
     private var pref: SharedPreferences? = null
-
-    // Editor for Shared preferences
     private var editor: SharedPreferences.Editor? = null
     private val prefName = "garisea"
 
-    // Context
     var context: Context? = context
 
-    val str: String = "Hello Benjamin"
-
     private val creditScoreKey = "creditScore"
-
     private val amountPutDownKey = "amount"
-
     private val userNameKey = "username"
     private val firstNameKey = "firstname"
     private val middleNameKey = "middle_name"
@@ -33,7 +25,6 @@ class MyPreferences(context: Context) {
     private val monthlyIncomeKey = "monthly_income"
 
 
-    //Constructor
     init {
         pref = this.context?.getSharedPreferences(prefName, privateMode)
         editor = pref?.edit()
@@ -41,16 +32,16 @@ class MyPreferences(context: Context) {
 
 
     //CREDIT SCORE
-    fun setCreditScore(userName: String?) {
-        editor!!.putString(creditScoreKey, userName)
+    fun setCreditScore(score: Int) {
+        editor!!.putInt(creditScoreKey, score)
         editor!!.commit()
     }
 
-    fun getCreditScore(): String? {
-        return if (pref!!.getString(creditScoreKey, null) != null) pref!!.getString(
+    fun getCreditScore(): Int {
+        return pref!!.getInt(
             creditScoreKey,
-            null
-        ) else null
+            0
+        )
     }
 
 

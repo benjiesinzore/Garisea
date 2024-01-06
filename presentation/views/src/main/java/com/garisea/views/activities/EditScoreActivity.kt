@@ -1,13 +1,21 @@
 package com.garisea.views.activities
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.TextUtils
+import android.view.LayoutInflater
 import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.garisea.datasets.MyPreferences
+import com.garisea.views.HandleCustomDialog
 import com.garisea.views.R
 import com.garisea.views.databinding.ActivityEditScoreBinding
 
@@ -16,6 +24,7 @@ class EditScoreActivity : AppCompatActivity() {
     private lateinit var activityBinding: ActivityEditScoreBinding
 
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityBinding = ActivityEditScoreBinding.inflate(layoutInflater)
@@ -27,6 +36,7 @@ class EditScoreActivity : AppCompatActivity() {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = resources.getColor(R.color.greenPrimary)
         }
+
 
 
         val pref = MyPreferences(this)
@@ -45,19 +55,35 @@ class EditScoreActivity : AppCompatActivity() {
 
             if (TextUtils.isEmpty(activityBinding.etCreditScore.text.toString())
                 || TextUtils.isEmpty(activityBinding.etAmount.text.toString())) {
-                activityBinding.etCreditScore.error = "Field cannot be empty"
-                activityBinding.etAmount.error = "Field cannot be empty"
+                activityBinding.etCreditScore.error = getString(R.string.field_cannot_be_empty)
+                activityBinding.etAmount.error = getString(R.string.field_cannot_be_empty)
             } else {
-                val creditScore = activityBinding.etCreditScore.text.toString()
+                val creditScore = activityBinding.etCreditScore.text.toString().toInt()
                 val amount = activityBinding.etAmount.text.toString()
-
 
                 pref.setCreditScore(creditScore)
                 pref.setAmountToPutDown(amount)
+
+                val handleCustomDialog = HandleCustomDialog(this)
+                handleCustomDialog.showLoadingDialog()
+
+                Handler(Looper.getMainLooper()).postDelayed({
+                    handleCustomDialog.hideLoadingDialog()
+
+                    Toast.makeText(this,
+                        getString(R.string.data_was_updated_successfully), Toast.LENGTH_SHORT).show()
+
+                    val mainActivityIntent = Intent(this, MainActivity::class.java)
+                    startActivity(mainActivityIntent)
+                    finish()
+
+                }, 5000)
             }
 
 
         }
 
+
     }
+
 }

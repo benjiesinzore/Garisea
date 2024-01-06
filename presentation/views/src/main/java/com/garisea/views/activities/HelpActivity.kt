@@ -1,5 +1,6 @@
 package com.garisea.views.activities
 
+import android.annotation.SuppressLint
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,6 +12,7 @@ import com.garisea.views.R
 class HelpActivity : AppCompatActivity() {
 
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_help)
@@ -23,7 +25,7 @@ class HelpActivity : AppCompatActivity() {
         }
 
         val topBarTile = findViewById<TextView>(R.id.topBarTile)
-        topBarTile.text = "Help Center"
+        topBarTile.text = getString(R.string.help_center)
 
         val toolBarBackBtn = findViewById<ImageView>(R.id.toolBarBackBtn)
         toolBarBackBtn.setOnClickListener{

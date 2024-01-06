@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp">
+    android:layout_marginStart="@dimen/_20dp"
+    android:layout_marginEnd="@dimen/_20dp">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        tools:ignore="RelativeOverlap">
 
         <TextView
             android:id="@+id/topBarTile"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="@dimen/_15dp"
             android:text="@string/tool_bar"
             android:textColor="@color/black"
             android:textSize="25sp"
@@ -25,7 +27,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/_10dp"
         android:layout_alignParentEnd="true"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
@@ -33,19 +35,21 @@
 
         <RelativeLayout
             android:id="@+id/rlNotificationBtnActBg"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_icon_inactive">
+            android:background="@drawable/background_icon_inactive"
+            tools:ignore="UselessParent">
 
         <ImageView
-            android:paddingStart="15dp"
+            android:paddingStart="@dimen/_15dp"
             android:layout_centerVertical="true"
             android:id="@+id/toolBarBackBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_arrow_back" />
+            android:src="@drawable/ic_arrow_back"
+            tools:ignore="ContentDescription,RtlSymmetry" />
 
         </RelativeLayout>
 

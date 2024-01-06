@@ -1,5 +1,6 @@
 package com.garisea.views.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -12,13 +13,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.garisea.views.R
-import java.util.Calendar
 
 
 class MainActivity : AppCompatActivity() {
 
     private var navController: NavController? = null
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -42,16 +43,16 @@ class MainActivity : AppCompatActivity() {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main)
 
         val rlDashboardBtnActBg = findViewById<RelativeLayout>(R.id.rlDashboardBtnActBg)
-        rlDashboardBtnActBg.setOnClickListener { handleBottomAndTopBarStyling("home") }
+        rlDashboardBtnActBg.setOnClickListener { handleBottomAndTopBarStyling(getString(R.string.home)) }
 
         val rlTipsBtnActBg = findViewById<RelativeLayout>(R.id.rlCatalogBtn)
-        rlTipsBtnActBg.setOnClickListener { handleBottomAndTopBarStyling("tips") }
+        rlTipsBtnActBg.setOnClickListener { handleBottomAndTopBarStyling(getString(R.string.tips)) }
 
         val rlOfferBtnActBg = findViewById<RelativeLayout>(R.id.rlAddBtn)
-        rlOfferBtnActBg.setOnClickListener { handleBottomAndTopBarStyling("offer") }
+        rlOfferBtnActBg.setOnClickListener { handleBottomAndTopBarStyling(getString(R.string.offer)) }
 
         val rlProfileBtnActBg = findViewById<RelativeLayout>(R.id.rlTransactionBtn)
-        rlProfileBtnActBg.setOnClickListener { handleBottomAndTopBarStyling("profile") }
+        rlProfileBtnActBg.setOnClickListener { handleBottomAndTopBarStyling(getString(R.string.profile)) }
 
         val rlProfileBtn = findViewById<RelativeLayout>(R.id.rlProfileBtn)
         rlProfileBtn.setOnClickListener{
@@ -66,18 +67,6 @@ class MainActivity : AppCompatActivity() {
         val rlHelpBtn = findViewById<RelativeLayout>(R.id.rlHelpBtn)
         rlHelpBtn.setOnClickListener{
             startActivity(Intent(this, HelpActivity::class.java))
-        }
-
-        //GET CURRENT TIME
-        val calendar = Calendar.getInstance()
-        val hourOfDay = calendar.get(Calendar.HOUR_OF_DAY)
-
-        var greetingMessage = ""
-        when {
-            hourOfDay in 6..11 -> greetingMessage = "Hello, Good Morning"
-            hourOfDay in 12..17 -> greetingMessage = "Hello, Good Afternoon"
-            hourOfDay in 18..21 -> greetingMessage = "Hello, Good Evening"
-            else -> greetingMessage = "Hello, "
         }
 
 
@@ -100,7 +89,7 @@ class MainActivity : AppCompatActivity() {
 
 
         when (str) {
-            "home" -> {
+            getString(R.string.home) -> {
 
                 rlDashboardBtnActBg.setBackgroundResource(R.drawable.background_icon_active)
                 rlTipsBtnActBg.setBackgroundResource(R.drawable.background_icon_inactive)
@@ -119,7 +108,7 @@ class MainActivity : AppCompatActivity() {
                 navController?.navigate(R.id.action_DashboardFragment)
             }
 
-            "tips" -> {
+            getString(R.string.tips) -> {
 
                 rlDashboardBtnActBg.setBackgroundResource(R.drawable.background_icon_inactive)
                 rlTipsBtnActBg.setBackgroundResource(R.drawable.background_icon_active)
@@ -137,7 +126,7 @@ class MainActivity : AppCompatActivity() {
                 navController?.navigate(R.id.action_TipsFragment)
             }
 
-            "offer" -> {
+            getString(R.string.offer) -> {
 
                 rlDashboardBtnActBg.setBackgroundResource(R.drawable.background_icon_inactive)
                 rlTipsBtnActBg.setBackgroundResource(R.drawable.background_icon_inactive)
@@ -175,6 +164,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
 

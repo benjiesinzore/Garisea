@@ -36,21 +36,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/credit_score"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="@dimen/_5dp"
                 android:textStyle="bold"/>
 
             <EditText
+                android:hint="@string/credit_score"
                 android:id="@+id/et_credit_score"
                 android:paddingStart="@dimen/_10dp"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_55dp"
+                android:inputType="number"
                 android:background="@drawable/input_edtx_bg"
                 tools:ignore="LabelFor,RtlSymmetry,TextFields" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/_25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -63,12 +65,14 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:inputType="number"
+                android:hint="@string/amount_to_put_down"
                 android:id="@+id/et_amount"
                 android:paddingStart="@dimen/_10dp"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_55dp"
                 android:background="@drawable/input_edtx_bg"
-                tools:ignore="LabelFor,RtlSymmetry" />
+                tools:ignore="LabelFor,RtlSymmetry,TextFields" />
 
         </LinearLayout>
 

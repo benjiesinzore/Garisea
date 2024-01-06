@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:layout_marginBottom="5dp"
-    android:layout_marginTop="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
+    android:layout_marginStart="@dimen/_20dp"
+    android:layout_marginTop="@dimen/_5dp"
+    android:layout_marginEnd="@dimen/_20dp"
+    android:layout_marginBottom="@dimen/_5dp"
     android:gravity="center"
     android:orientation="horizontal"
-    android:layout_height="wrap_content">
+    tools:ignore="DisableBaselineAlignment">
 
     <RelativeLayout
         android:id="@+id/rlHomeBtn"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/_0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center">
@@ -22,7 +23,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:id="@+id/rlDashboardBtnActBg"
@@ -36,7 +38,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_home"/>
+                    android:src="@drawable/ic_home"
+                    tools:ignore="ContentDescription" />
 
             </RelativeLayout>
 
@@ -44,7 +47,7 @@
                 android:id="@+id/txDashboard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="home"/>
+                android:text="@string/home"/>
 
         </LinearLayout>
 
@@ -52,7 +55,7 @@
 
     <RelativeLayout
         android:id="@+id/rlCatalogBtn"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/_0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center">
@@ -61,7 +64,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:id="@+id/rlTipsBtnActBg"
@@ -75,7 +79,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_tips"/>
+                    android:src="@drawable/ic_tips"
+                    tools:ignore="ContentDescription" />
 
             </RelativeLayout>
 
@@ -84,7 +89,7 @@
                 android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tips"/>
+                android:text="@string/tips"/>
 
         </LinearLayout>
 
@@ -92,7 +97,7 @@
 
     <RelativeLayout
         android:id="@+id/rlAddBtn"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/_0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center">
@@ -101,7 +106,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:id="@+id/rlOffersBtnActBg"
@@ -115,7 +121,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_offer"/>
+                    android:src="@drawable/ic_offer"
+                    tools:ignore="ContentDescription" />
 
             </RelativeLayout>
 
@@ -124,7 +131,7 @@
                 android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="offers"/>
+                android:text="@string/offers"/>
 
         </LinearLayout>
 
@@ -132,7 +139,7 @@
 
     <RelativeLayout
         android:id="@+id/rlTransactionBtn"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/_0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center">
@@ -141,7 +148,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
                 android:id="@+id/rlProfileBtnActBg"
@@ -155,7 +163,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_profile"/>
+                    android:src="@drawable/ic_profile"
+                    tools:ignore="ContentDescription" />
 
             </RelativeLayout>
 
@@ -164,7 +173,7 @@
                 android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="profile"/>
+                android:text="@string/profile"/>
 
         </LinearLayout>
 

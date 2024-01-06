@@ -7,11 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.garisea.datasets.local.adapter.ItemOffersAdapter
-import com.garisea.datasets.local.adapter.ItemTipsAdapter
-import com.garisea.datasets.local.models.ParseJsonData
-import com.garisea.views.R
+import com.garisea.datasets.local.ParseJsonData
 import com.garisea.views.databinding.FragmentOfferBinding
-import com.garisea.views.databinding.FragmentTipsBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

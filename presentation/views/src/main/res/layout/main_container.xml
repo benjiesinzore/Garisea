@@ -27,7 +27,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
-        app:navGraph="@navigation/main_nav_graph"/>
+        app:navGraph="@navigation/main_nav_graph"
+        tools:ignore="FragmentTagUsage" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout"

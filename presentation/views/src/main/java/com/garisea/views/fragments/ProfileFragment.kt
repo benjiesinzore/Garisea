@@ -5,10 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.garisea.datasets.MyPreferences
-import com.garisea.views.R
-import com.garisea.views.databinding.FragmentDashboardBinding
 import com.garisea.views.databinding.FragmentProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match

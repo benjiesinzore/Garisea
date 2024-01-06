@@ -2,6 +2,7 @@
 <resources>
     <item name="greenPrimary" type="color">#07bb64</item>
     <item name="black" type="color">#000</item>
+    <item name="white" type="color">#fff</item>
     <color name="greySecondary" type="color">#ededed</color>
     <color name="greyPrimary" type="color">#e2e2e2</color>
 

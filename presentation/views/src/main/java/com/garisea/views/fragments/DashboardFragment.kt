@@ -9,7 +9,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.garisea.datasets.MyPreferences
 import com.garisea.datasets.local.adapter.ItemFinancingAdapter
-import com.garisea.datasets.local.models.ParseJsonData
+import com.garisea.datasets.local.ParseJsonData
+import com.garisea.views.R
 import com.garisea.views.activities.EditScoreActivity
 import com.garisea.views.activities.HelpActivity
 import com.garisea.views.activities.UserDetailsActivity
@@ -42,12 +43,6 @@ class DashboardFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
 
-
-
-            //
-
-
-
         }
     }
 
@@ -63,17 +58,13 @@ class DashboardFragment : Fragment() {
         val pref = MyPreferences(context)
 
 
-
-
         val calendar = Calendar.getInstance()
-        val hourOfDay = calendar.get(Calendar.HOUR_OF_DAY)
 
-        var greetingMessage = ""
-        greetingMessage = when (hourOfDay) {
-            in 6..11 -> "Hello, Good Morning"
-            in 12..17 -> "Hello, Good Afternoon"
-            in 18..21 -> "Hello, Good Evening"
-            else -> "Hello, "
+        val greetingMessage: String = when (calendar.get(Calendar.HOUR_OF_DAY)) {
+            in 6..11 -> getString(R.string.hello_good_morning)
+            in 12..17 -> getString(R.string.hello_good_afternoon)
+            in 18..21 -> getString(R.string.hello_good_evening)
+            else -> getString(R.string.hello)
         }
 
         fragmentBinding.txGreetings.text = greetingMessage
@@ -85,17 +76,20 @@ class DashboardFragment : Fragment() {
 
         fragmentBinding.rlSettingsBtn.setOnClickListener {
             context.startActivity(Intent(requireActivity(), EditScoreActivity::class.java))
+            requireActivity().finish()
         }
 
         fragmentBinding.rlHelpBtn.setOnClickListener {
             context.startActivity(Intent(requireActivity(), HelpActivity::class.java))
         }
 
+
         val items = ParseJsonData(context).financingWrapper.items
+        val filteredItems = items.filter { it.score == pref?.getCreditScore() }
 
         fragmentBinding.recycleViewFinancing.layoutManager = LinearLayoutManager(context)
 
-        val itemAdapter = ItemFinancingAdapter(items)
+        val itemAdapter = ItemFinancingAdapter(filteredItems)
         fragmentBinding.recycleViewFinancing.adapter = itemAdapter
 
         return view

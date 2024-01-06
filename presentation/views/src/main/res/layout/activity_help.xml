@@ -2,7 +2,6 @@
 <LinearLayout
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,11 +12,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp">
+        android:layout_margin="@dimen/_20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
@@ -26,6 +25,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem"
@@ -33,16 +33,220 @@
                     android:textStyle="bold"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
                     android:textSize="18sp"/>
 
                 <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textSize="@dimen/_22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textSize="@dimen/_22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
+                    android:textSize="@dimen/_18sp"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textSize="@dimen/_22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
+                    android:textSize="@dimen/_18sp"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textSize="@dimen/_22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
+                    android:textSize="@dimen/_18sp"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textSize="@dimen/_22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
+                    android:textSize="@dimen/_18sp"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textSize="@dimen/_22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
+                    android:textSize="@dimen/_18sp"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textSize="@dimen/_22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
+                    android:textSize="@dimen/_18sp"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
                     android:background="@color/black"/>
 
             </LinearLayout>
@@ -56,20 +260,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/_22sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
+                    android:textSize="@dimen/_18sp"/>
 
                 <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/_1dp"
                     android:background="@color/black"/>
 
             </LinearLayout>
@@ -83,209 +287,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/_22sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
+                    android:textSize="@dimen/_18sp"/>
 
                 <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem"
-                    android:textSize="22sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem"
-                    android:textSize="22sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem"
-                    android:textSize="22sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem"
-                    android:textSize="22sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem"
-                    android:textSize="22sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem"
-                    android:textSize="22sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem"
-                    android:textSize="22sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe"
-                    android:textSize="18sp"/>
-
-                <View
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/_1dp"
                     android:background="@color/black"/>
 
             </LinearLayout>

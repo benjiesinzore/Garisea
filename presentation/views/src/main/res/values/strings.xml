@@ -20,4 +20,21 @@
     <string name="credit_score">credit score</string>
     <string name="amount_to_put_down">amount to put down</string>
     <string name="submit">submit</string>
+    <string name="field_cannot_be_empty">Field cannot be empty</string>
+    <string name="help_center">Help Center</string>
+    <string name="home">home</string>
+    <string name="offer">offer</string>
+    <string name="profile">profile</string>
+    <string name="hello_good_morning">Hello, Good Morning</string>
+    <string name="hello_good_afternoon">Hello, Good Afternoon</string>
+    <string name="hello_good_evening">Hello, Good Evening</string>
+    <string name="hello">"Hello, "</string>
+    <string name="benjamin_sinzore">Benjamin Sinzore</string>
+    <string name="update_profile">update profile</string>
+    <string name="update_score">update score</string>
+    <string name="help">help</string>
+    <string name="qualified">Qualified</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="data_was_updated_successfully">Data was updated successfully</string>
+    <string name="processing">Processing</string>
 </resources>

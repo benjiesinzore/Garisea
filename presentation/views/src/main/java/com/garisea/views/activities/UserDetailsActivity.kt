@@ -1,13 +1,19 @@
 package com.garisea.views.activities
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.TextUtils
 import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.garisea.datasets.MyPreferences
+import com.garisea.views.HandleCustomDialog
 import com.garisea.views.R
 import com.garisea.views.databinding.ActivityUserDetailsBinding
 
@@ -15,6 +21,7 @@ class UserDetailsActivity : AppCompatActivity() {
 
     private lateinit var activityBinding: ActivityUserDetailsBinding
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityBinding = ActivityUserDetailsBinding.inflate(layoutInflater)
@@ -46,13 +53,13 @@ class UserDetailsActivity : AppCompatActivity() {
                 || TextUtils.isEmpty(activityBinding.etHomeCity.text.toString()) || TextUtils.isEmpty(activityBinding.etHomeAddress.text.toString())
                 || TextUtils.isEmpty(activityBinding.etMonthlyIncome.text.toString())) {
 
-                activityBinding.etUsername.error = "Field cannot be empty"
-                activityBinding.etFirstName.error = "Field cannot be empty"
-                activityBinding.etMiddleName.error = "Field cannot be empty"
-                activityBinding.etLastName.error = "Field cannot be empty"
-                activityBinding.etHomeCity.error = "Field cannot be empty"
-                activityBinding.etHomeAddress.error = "Field cannot be empty"
-                activityBinding.etMonthlyIncome.error = "Field cannot be empty"
+                activityBinding.etUsername.error = getString(R.string.field_cannot_be_empty)
+                activityBinding.etFirstName.error = getString(R.string.field_cannot_be_empty)
+                activityBinding.etMiddleName.error = getString(R.string.field_cannot_be_empty)
+                activityBinding.etLastName.error = getString(R.string.field_cannot_be_empty)
+                activityBinding.etHomeCity.error = getString(R.string.field_cannot_be_empty)
+                activityBinding.etHomeAddress.error = getString(R.string.field_cannot_be_empty)
+                activityBinding.etMonthlyIncome.error = getString(R.string.field_cannot_be_empty)
             } else {
                 val username = activityBinding.etUsername.text.toString()
                 val firstName = activityBinding.etFirstName.text.toString()
@@ -69,6 +76,22 @@ class UserDetailsActivity : AppCompatActivity() {
                 pref.setHomeCity(homeCity)
                 pref.setHomeAddress(homeAddress)
                 pref.setMonthlyIncome(monthlyIncome)
+
+
+                val handleCustomDialog = HandleCustomDialog(this)
+                handleCustomDialog.showLoadingDialog()
+
+                Handler(Looper.getMainLooper()).postDelayed({
+                    handleCustomDialog.hideLoadingDialog()
+
+                    Toast.makeText(this,
+                        getString(R.string.data_was_updated_successfully), Toast.LENGTH_SHORT).show()
+
+                    val mainActivityIntent = Intent(this, MainActivity::class.java)
+                    startActivity(mainActivityIntent)
+                    finish()
+
+                }, 5000)
             }
 
 

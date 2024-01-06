@@ -19,6 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
     private val splashTimeOut: Long = 2_000
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -30,14 +31,13 @@ class SplashActivity : AppCompatActivity() {
             window.statusBarColor = resources.getColor(com.garisea.views.R.color.greenPrimary)
         }
 
-        val gifResourceId = R.drawable.gif_drive
+        val gifResourceId = R.drawable.garisea
         val imageView = findViewById<ImageView>(R.id.loadGif)
 
         val username = MyPreferences(this).getUserName()
 
         // Using Glide to load and display the GIF
         Glide.with(this)
-            .asGif()
             .load(gifResourceId)
             .into(imageView)
 
