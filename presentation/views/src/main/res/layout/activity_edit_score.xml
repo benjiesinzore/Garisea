@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditScoreActivity">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/topBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/rlSubmitBtn"
+        android:layout_below="@+id/topBarLayout"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_score"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_credit_score"
+                android:paddingStart="@dimen/_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55dp"
+                android:background="@drawable/input_edtx_bg"
+                tools:ignore="LabelFor,RtlSymmetry,TextFields" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_to_put_down"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:paddingStart="@dimen/_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55dp"
+                android:background="@drawable/input_edtx_bg"
+                tools:ignore="LabelFor,RtlSymmetry" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rlSubmitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/submitBtn"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

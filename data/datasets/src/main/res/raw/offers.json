@@ -1,0 +1,79 @@
+{
+    "name":"offers",
+    "items": [
+      {
+        "id": 1,
+        "name": "Offer 1",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 2,
+        "name": "Offer 2",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 3,
+        "name": "Offer 3",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 4,
+        "name": "Offer 4",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 5,
+        "name": "Offer 5",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 6,
+        "name": "Offer 6",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 7,
+        "name": "Offer 7",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 8,
+        "name": "Offer 8",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 9,
+        "name": "Offer 9",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 10,
+        "name": "Offer 10",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 11,
+        "name": "Offer 11",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      },
+      {
+        "id": 12,
+        "name": "Offer 12",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!",
+        "valid": "12 FEB 2024"
+      }
+      
+    ]
+  }
+  

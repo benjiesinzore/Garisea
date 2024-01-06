@@ -1,0 +1,23 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_non_officia_totam_fugiat_esse_ipsa_illum_quae_sapiente_quasi_consequatur_deleniti_eius_minima_maiores_modi_nostrum_nulla_totam_inventore_labore_saepe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!</string>
+    <string name="lorem">Lorem</string>
+    <string name="update_credit_score">Update Credit Score</string>
+    <string name="update_user_info">Update User Info</string>
+    <string name="garisea">Garisea</string>
+    <string name="first_name">first name</string>
+    <string name="middle_name">middle name</string>
+    <string name="last_name">last name</string>
+    <string name="home_city">home city</string>
+    <string name="home_address">home address</string>
+    <string name="monthly_income">monthly income</string>
+    <string name="user_profile">User Profile</string>
+    <string name="tips">Tips</string>
+    <string name="offers">Offers</string>
+    <string name="tool_bar">Tool Bar</string>
+    <string name="username">username</string>
+    <string name="credit_score">credit score</string>
+    <string name="amount_to_put_down">amount to put down</string>
+    <string name="submit">submit</string>
+</resources>

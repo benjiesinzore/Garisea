@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/DashboardFragment">
+
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.garisea.views.fragments.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_DashboardFragment"
+            app:destination="@id/DashboardFragment" />
+
+        <action
+            android:id="@+id/action_TipsFragment"
+            app:destination="@id/TipsFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+        <action
+            android:id="@+id/action_OfferFragment"
+            app:destination="@id/OfferFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.garisea.views.fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/OfferFragment"
+        android:name="com.garisea.views.fragments.OfferFragment"
+        tools:layout="@layout/fragment_offer"/>
+
+    <fragment
+        android:id="@+id/TipsFragment"
+        android:name="com.garisea.views.fragments.TipsFragment"
+        tools:layout="@layout/fragment_tips"/>
+
+</navigation>

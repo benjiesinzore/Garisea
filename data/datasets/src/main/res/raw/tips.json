@@ -1,0 +1,67 @@
+{
+    "name":"tips",
+    "items": [
+      {
+        "id": 1,
+        "name": "Tip 1",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 2,
+        "name": "Tip 2",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 3,
+        "name": "Tip 3",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 4,
+        "name": "Tip 4",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 5,
+        "name": "Tip 5",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 6,
+        "name": "Tip 6",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 7,
+        "name": "Tip 7",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 8,
+        "name": "Tip 8",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 9,
+        "name": "Tip 9",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 10,
+        "name": "Tip 10",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 11,
+        "name": "Tip 11",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      },
+      {
+        "id": 12,
+        "name": "Tip 12",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, officia totam fugiat esse ipsa illum quae sapiente quasi consequatur deleniti eius minima? Maiores modi nostrum nulla totam inventore labore saepe!"
+      }
+      
+    ]
+  }
+  
